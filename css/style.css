@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+body{
+  margin:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:100vh;
+  background-image: linear-gradient(to right ,#ff0000 ,#006bffbf);
+
+}
+.inner-container{
+  background-color: #000000b5;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form{
+  width: 264px;
+  height: 384px;
+  background: #a9a9a975;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  border-radius: 20px;
+  border: 1px solid #00ffee;
+}
+
+
+
+.inner-text-placeHolder::placeholder{
+  color: rgba(255, 15, 15, 0.849);
+  position: absolute;
+  top: 0;
+  left: 5%;
+  font-size: .5em;
+}
+
+.grid-container {
+  width:100%;
+  height:100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin:6px;
+  gap: 6px 6px;
+  grid-template-areas:
+    "display display display display"
+    "display display display display"
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . equate"
+    ". . . equate";
+}
+.display { grid-area: display; }
+.equate { grid-area: equate; }
+.display, .btn, .equate{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  
+}
+
+
+
+.inner-display{
+  width: 100%;
+  height: 70px;
+  background: #191811;
+  box-shadow: 1px 1px 2px rgb(40 38 27 / 30%), -1px -1px 2px rgb(10 10 7 / 50%), inset -5px 5px 10px rgb(10 10 7 / 20%), inset 5px -5px 10px rgb(10 10 7 / 20%), inset -5px -5px 10px rgb(40 38 27 / 90%), inset 5px 5px 13px rgb(10 10 7 / 90%);
+  border-radius: 20px;
+  text-align: right;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.inner-text{
+  /* text-align:right;
+  background: #191811;
+  height:100px;
+  font-family:Rubik;
+  font-size:24px;
+  margin:20px 10px 10px 10px;
+  font-style: normal;
+  font-weight: 500;
+  color: #F8F8F8;
+  border-width:0px;
+  border:none; */
+  text-align: right;
+  background: #191811;
+  height: 100px;
+  font-family: Rubik;
+  font-size: 24px;
+  /* margin: 20px 10px 10px 10px; */
+  font-style: normal;
+  font-weight: 500;
+  color: #F8F8F8;
+  border-width: 0px;
+  border: none;
+  border-radius: 0 0 1em 1em;
+}
+.inner-text2{
+  text-align: right;
+    background: #191811;
+    height: 100px;
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    color: #F8F8F8;
+    border-width: 0px;
+    border: none;
+    border-radius: 1em 1em 0 0;
+}
+
+
+.inner-text:focus{
+  border-width:0px;
+  border:none;
+  outline: none;
+}
+.inner-button{
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  /* border-radius: .9em; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  font-family: cursive;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  color: #000000;
+  transition: box-shadow 0.3s ease-in-out;
+  
+}
+
+
+
+
+.inner-button:active{
+  box-shadow: 1px 1px 2px rgba(40, 38, 27, 0.3), -1px -1px 2px rgba(10, 10, 7, 0.5), inset -5px 5px 10px rgba(10, 10, 7, 0.2), inset 5px -5px 10px rgba(10, 10, 7, 0.2), inset -5px -5px 10px rgba(40, 38, 27, 0.9), inset 5px 5px 13px rgba(10, 10, 7, 0.9);
+  transition: box-shadow 0.3s ease-in-out;
+  font-size:14px;
+
+}
+.equate .inner-button{
+  height:100px;
+  color: #191811;
+}
+.equate .inner-button:active{
+  box-shadow: 1px 1px 2px rgba(255, 255, 13, 0.3), -1px -1px 2px rgba(98, 68, 3, 0.5), inset -5px 5px 10px rgba(98, 68, 3, 0.2), inset 5px -5px 10px rgba(98, 68, 3, 0.2), inset -5px -5px 10px rgba(255, 255, 13, 0.9), inset 5px 5px 13px rgba(98, 68, 3, 0.9);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.yellow{
+  color: #112003;
+}
